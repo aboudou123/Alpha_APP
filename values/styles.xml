@@ -1,0 +1,39 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat">
+
+    </style>
+
+    <style name="Theme.AppCompat" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="windowActionModeOverlay">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="style_Spinner">
+        <item name="android:background">@drawable/ic_drop_down</item>
+        <item name="android:dropDownSelector">@color/colorPrimary</item>
+        <item name="android:popupBackground">#fff</item>
+        <item name="android:spinnerMode">dropdown</item>
+
+    </style>
+
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">#006A4E</item>
+        <item name="android:textColorPrimary">#3f3f3f</item>
+        <item name="android:background">#ffffff</item>
+    </style>
+</resources>
