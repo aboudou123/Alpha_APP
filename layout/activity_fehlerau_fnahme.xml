@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.FehlerauFnahmeAct">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/app_bar"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <!--<ImageView-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:background="@drawable/ic_home"-->
+                <!--android:layout_marginTop="02dp"-->
+                <!--/>-->
+
+
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_tittle"
+                    android:layout_centerInParent="true"
+                    />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_home"
+                    />
+
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/alpha_logoo"
+                    android:layout_alignParentRight="true"
+                    />
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_bar"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fehleraufnahme."
+                    android:textSize="25sp"
+                    android:textColor="#808080"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="05dp"
+                    />
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/text_bg_border"
+                    >
+                    <TextView
+                        android:id="@+id/txv_projk_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Summe:"
+                        android:textSize="18sp"
+                        android:textColor="#808080"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:layout_marginLeft="10dp"
+                        />
+                    <TextView
+                        android:id="@+id/txv_summe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="18sp"
+                        android:textColor="#808080"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:layout_marginLeft="10dp"
+                        />
+
+
+                </LinearLayout>
+
+
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_obarkategorie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/lin_neues_projekt"
+                android:layout_marginTop="0dp"
+
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oberkategorie"
+                    android:textSize="25sp"
+                    android:textColor="#808080"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="25dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/text_input_border"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="10dp"
+                    >
+                    <Spinner
+                        android:id="@+id/spin_obarkategorie"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        style="@style/style_Spinner"
+                        />
+
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/imgv_nio_nok"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_nio_or_nok"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="23dp"
+                        />
+                    <TextView
+                        android:id="@+id/txv_result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_below="@+id/imgv_nio_nok"
+                        android:textSize="25sp"
+                        android:textColor="#808080"
+                        android:textStyle="bold"
+                        android:layout_marginTop="05dp"
+                        android:layout_centerHorizontal="true"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Counter NiO"
+                        android:layout_below="@+id/txv_result"
+                        android:textSize="25sp"
+                        android:textColor="#808080"
+                        android:textStyle="bold"
+                        android:layout_marginTop="05dp"
+                        android:layout_centerHorizontal="true"
+                        />
+
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_hu_nummer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/lin_obarkategorie"
+                android:layout_marginTop="10dp"
+
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HU-Nummer"
+                    android:textSize="25sp"
+                    android:textColor="#808080"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="25dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/text_input_border"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="10dp"
+                    >
+                    <EditText
+                        android:id="@+id/edt_hu_nummer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:layout_gravity="center"
+                        android:hint="Bitte eingeben"
+                        android:layout_marginLeft="10dp"
+                        />
+
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/imgv_sonderfreigabe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_sonderfreigabe"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="23dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/txv_result_sonderfreigabe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:layout_below="@+id/imgv_sonderfreigabe"
+                        android:textSize="25sp"
+                        android:textColor="#808080"
+                        android:textStyle="bold"
+                        android:layout_marginTop="05dp"
+                        android:layout_centerHorizontal="true"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Counter Sonderfreigabe"
+                        android:layout_below="@+id/txv_result_sonderfreigabe"
+                        android:textSize="25sp"
+                        android:textColor="#808080"
+                        android:textStyle="bold"
+                        android:layout_marginTop="05dp"
+                        android:layout_centerHorizontal="true"
+                        />
+
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lin_lieferscheinnummer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/lin_hu_nummer"
+                android:layout_marginTop="10dp"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lieferscheinnummer"
+                    android:textSize="25sp"
+                    android:textColor="#808080"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="25dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/text_input_border"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="10dp"
+                    >
+                    <EditText
+                        android:id="@+id/edt_lieferscheinnummer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:layout_gravity="center"
+                        android:hint="Bitte eingeben"
+                        android:layout_marginLeft="10dp"
+                        />
+
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/imgv_io_ok"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_io_ok"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="23dp"
+                        />
+                    <TextView
+                        android:id="@+id/txv_result_io_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:layout_below="@+id/imgv_io_ok"
+                        android:textSize="25sp"
+                        android:textColor="#808080"
+                        android:textStyle="bold"
+                        android:layout_marginTop="05dp"
+                        android:layout_centerHorizontal="true"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Counter iO"
+                        android:layout_below="@+id/txv_result_io_ok"
+                        android:textSize="25sp"
+                        android:textColor="#808080"
+                        android:textStyle="bold"
+                        android:layout_marginTop="05dp"
+                        android:layout_centerHorizontal="true"
+                        />
+
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/lin_back_next"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/lin_lieferscheinnummer"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="05dp"
+                >
+
+
+
+                <LinearLayout
+                    android:id="@+id/lin_reset"
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginRight="15dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Werte zurucksetzen"
+                        android:textSize="18sp"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_marginLeft="05dp"
+                        />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

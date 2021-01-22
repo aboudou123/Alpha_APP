@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="koffi.simplifiedcodingalpha.com.jonadanapaul.activities.ProjektInit1von4Act">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/app_bar"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_home"
+                    android:layout_marginTop="02dp"
+                    />
+
+
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/lgalpha"
+                    android:layout_centerInParent="true"
+                    />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/alpha_logoo"
+                    android:layout_alignParentRight="true"
+                    />
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_bar"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:id="@+id/lin_projk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            >
+            <TextView
+                android:id="@+id/txv_pro_init"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Projektinitierung. (1 von 4)"
+                android:layout_gravity="left"
+                android:layout_marginLeft="09dp"
+                android:textSize="20sp"
+                android:textColor="#808080"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/txv_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Projekt (existierendes Projekt)"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:textColor="#808080"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lin_projkt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/text_input_border"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/lin_projk"
+            >
+            <Spinner
+                android:id="@+id/spin_exist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                style="@style/style_Spinner"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lin_neues_projekt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/lin_projkt"
+
+            >
+            <TextView
+                android:id="@+id/txv_pro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Neues Projekt anlegen"
+                android:layout_gravity="center"
+                android:layout_marginLeft="09dp"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_obarkategorie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/lin_neues_projekt"
+            android:layout_marginTop="10dp"
+
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oberkategorie"
+                android:textSize="25sp"
+                android:textColor="#808080"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/text_input_border"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="10dp"
+                >
+                <Spinner
+                    android:id="@+id/spin_obarkategorie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    style="@style/style_Spinner"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lin_untercategorie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/lin_obarkategorie"
+            android:layout_marginTop="10dp"
+
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unterkategorie"
+                android:textSize="25sp"
+                android:textColor="#808080"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/text_input_border"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="10dp"
+                >
+                <Spinner
+                    android:id="@+id/spin_untercategorie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    style="@style/style_Spinner"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lin_bildocument"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/lin_untercategorie"
+            android:layout_marginTop="10dp"
+
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bilddokumentation?"
+                android:textSize="25sp"
+                android:textColor="#808080"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/text_input_border"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="10dp"
+                >
+                <Spinner
+                    android:id="@+id/spin_bildocument"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    style="@style/style_Spinner"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lin_prüfart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/lin_bildocument"
+            android:layout_marginTop="10dp"
+
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prüfart"
+                android:textSize="25sp"
+                android:textColor="#808080"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/text_input_border"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="10dp"
+                >
+                <Spinner
+                    android:id="@+id/spin_prüfart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    style="@style/style_Spinner"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_packeinheit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/lin_prüfart"
+            android:layout_marginTop="10dp"
+
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Packeinheit"
+                android:textSize="25sp"
+                android:textColor="#808080"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/text_input_border"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="10dp"
+                >
+                <Spinner
+                    android:id="@+id/spin_packeinheit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    style="@style/style_Spinner"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_identifikationsart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/lin_packeinheit"
+            android:layout_marginTop="10dp"
+
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Identifikationsart"
+                android:textSize="25sp"
+                android:textColor="#808080"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/text_input_border"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="10dp"
+                >
+                <Spinner
+                    android:id="@+id/spin_identifikationsart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    style="@style/style_Spinner"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lin_weitere_bausteine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/lin_identifikationsart"
+            android:layout_marginTop="10dp"
+
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weitere Bausteine"
+                android:textSize="25sp"
+                android:textColor="#808080"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                >
+
+                <CheckBox
+                    android:id="@+id/chk_logistik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Logistik"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="#808080"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chk_sap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SAP"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="#808080"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chk_umpacken"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Umpacken"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="#808080"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lin_back_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/lin_weitere_bausteine"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="05dp"
+            >
+
+
+            <RelativeLayout
+                android:id="@+id/rl_back"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:background="@color/colorPrimary"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Back"
+                    android:textSize="25sp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                     android:layout_centerInParent="true"
+                    />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_next"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="15dp"
+
+                android:orientation="horizontal"
+                android:background="@color/colorPrimary"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Next"
+                    android:textSize="25sp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"
+                    />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

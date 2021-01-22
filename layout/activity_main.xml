@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/app_bar"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                >
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/lgalpha"
+
+                    />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/alpha_logoo"
+                    android:layout_alignParentRight="true"
+                    />
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:id="@+id/lin_logout"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/app_bar"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        >
+        <TextView
+            android:id="@+id/txv_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lin_machen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/lin_logout"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:id="@+id/txv_was_machen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Was wollen Sie machen ?"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:textColor="#868686"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin_machen"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+    <LinearLayout
+        android:id="@+id/lin_pro_init"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/lin_machen"
+        android:layout_marginTop="10dp"
+        >
+         <ImageView
+             android:id="@+id/imv_pro_init"
+             android:layout_width="210dp"
+             android:layout_height="130dp"
+             android:background="@drawable/ic_pro_init"
+             android:layout_gravity="center_horizontal"
+             />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lin_fehler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/lin_pro_init"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:id="@+id/imv_fehler"
+            android:layout_width="210dp"
+            android:layout_height="130dp"
+            android:background="@drawable/ic_fehler"
+            android:layout_gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lin_pro_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/lin_fehler"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:id="@+id/imv_pro_status"
+            android:layout_width="210dp"
+            android:layout_height="130dp"
+            android:background="@drawable/ic_pro_status"
+            android:layout_gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

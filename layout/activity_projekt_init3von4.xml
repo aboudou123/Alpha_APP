@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ProjektInit3von4Act">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/app_bar"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_home"
+                    android:layout_marginTop="02dp"
+                    />
+
+
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/lgalpha"
+                    android:layout_centerInParent="true"
+                    />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/alpha_logoo"
+                    android:layout_alignParentRight="true"
+                    />
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_bar"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/txv_projk_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pro item"
+                android:layout_gravity="end"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                android:textColor="#808080"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/lin_projk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                >
+                <TextView
+                    android:id="@+id/txv_pro_init"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Projektinitierung. (3 von 4)"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="09dp"
+                    android:textSize="20sp"
+                    android:textColor="#808080"
+                    android:textStyle="bold"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_commodity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="05dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                >
+                <TextView
+                    android:id="@+id/txv_commodity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Commodity"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="09dp"
+                    android:textSize="20sp"
+                    android:textColor="#808080"
+                    android:textStyle="bold"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_Warenbegleitschein_fotographieren3"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginTop="05dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/text_input_border"
+                    >
+
+                    <EditText
+                        android:id="@+id/edt_msg_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp"
+                        android:inputType="text|textMultiLine"
+                        android:layout_marginTop="04dp"
+                        android:imeOptions="actionDone"
+                        android:background="@null"
+                        android:hint="Enter Here"
+                        android:layout_gravity="center_horizontal"
+                        android:textColorHint="#808080"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="05dp"
+                        android:gravity="top"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="05dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                >
+                <TextView
+                    android:id="@+id/txv_relevante_fehlerbilder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Relevante Fehlerbilder"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="09dp"
+                    android:textSize="20sp"
+                    android:textColor="#808080"
+                    android:textStyle="bold"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_relevante_fehlerbilder"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginTop="05dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/text_input_border"
+                    >
+
+                <ListView
+                    android:id="@+id/lv_rel_fehler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="05dp"
+                    android:layout_marginTop="05dp"
+                    android:layout_marginRight="05dp"
+                    android:divider="#fff"
+                     android:dividerHeight="2dp"
+
+                    >
+
+
+                </ListView>
+
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lin_back_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/lin_weitere_bausteine"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="05dp"
+                >
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_back"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:background="@color/colorPrimary"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Back"
+                        android:textSize="25sp"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:layout_centerInParent="true"
+                        />
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rl_next"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="15dp"
+
+                    android:orientation="horizontal"
+                    android:background="@color/colorPrimary"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Next"
+                        android:textSize="25sp"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:layout_centerInParent="true"
+                        />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
